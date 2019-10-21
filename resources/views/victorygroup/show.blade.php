@@ -39,9 +39,7 @@
            
         </div>
         <div class="table-responsive-md">
-            @foreach($members as $row)
-
-            <table class="table table-bordered">
+        <table class="table table-bordered">
                 <thead>
                     <tr>
                       <th scope="col">Full Name</th>
@@ -54,6 +52,8 @@
                       <th scope="col">Action</th>
                     </tr>
                 </thead>
+                @foreach($members as $row)
+
                 <tbody>
                     <tr>
                     <td>{{ $row['name'] }}</td>
@@ -66,9 +66,9 @@
                     <td><a class="btn btn-secondary" href="/members/create/{{ $victorygroup->id }}">Edit</a>
                         <a class="btn btn-secondary" href="/members/create/{{ $victorygroup->id }}">Delete</a></td>
                     </tr>
-                </tbody>
+                </tbody> 
+                @endforeach
             </table>    
-            @endforeach
         </div>
     </div>
 </div>
