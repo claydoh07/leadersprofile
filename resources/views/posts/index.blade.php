@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
-  <h2 align="center">WELCOME TO VICTORY STA. MARIA LEADER'S PROFILE</h2>
-   @foreach($posts as $post)
+  <h2 align="center"></h2>
+  <iframe src="https://victory.org.ph" height="567" width="100%" style=" border:none " scrolling="yes" class="pt-4 "></iframe>
+  <!--<audio src="/audio/lakad.mp3" autoplay="autoplay" loop="loop"></audio>-->
+
+   
+  @foreach($posts as $post)
    <div class="row pt-2 pb-2">
         <div class="col-6 offset-3 ">
            <div class="d-flex align-items-baseline">
@@ -23,7 +28,10 @@
         </div>
     </div>
     
-    @endforeach 
+    @endforeach
+    <div class="pt-1" align="center">Visit us at <a href="https://victory.org.ph" target="_blank">victory.org.ph</a></div>
+
+
 
     <div class="row">
         <div class="col-12 d-flex justify-content-center">

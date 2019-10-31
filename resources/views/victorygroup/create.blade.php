@@ -30,20 +30,30 @@
                 <div class="form-group row">
                     <label for="type" class="col-md-4 col-form-label">Victory Group Type</label>
 
-                    <input id="type" 
-                    type="text" 
-                    class="form-control @error('type') is-invalid @enderror" 
-                    type="type" 
-                    name="type"
-                    value="{{ old('type') }}" required 
-                    autocomplete="type" 
-                    autofocus>
+                     <select id="type"
+                            class="form-control @error('type') is-invalid @enderror" 
+                            name="type" 
+                            value="{{ old('type') }}" 
+                            autocomplete="type" 
+                            autofocus> >
+                            <option selected disabled="">Choose...</option>
+                            <option>Kids</option>
+                            <option>Toddlers</option>
+                            <option>Youth</option>
+                            <option>Campus</option>
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Widowed</option>
+                            <option>Separated</option>
+                            <option>Divorced</option>
 
-                    @error('type')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                            @error('civilStatus')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+
+                        </select>
                   
                 </div>
 

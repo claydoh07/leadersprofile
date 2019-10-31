@@ -43,6 +43,19 @@
 </div>
 
 <div class="row pt-5">   
+
+  <div class="col-4 pt-4">  
+        <a class="btn btn-outline-dark" href="/victorygroup/create">
+          <div align="center">
+            
+
+            <img src="/svg/addnew.png" class="w-100 h=100 pb-3 pt-2" >
+            <p class="">
+               <br> <strong>Add new victory group</strong> <br> <br>
+            </p>
+          </div>
+        </a>
+    </div>    
     @foreach($user->victorygroups as $victorygroup)
 
 
